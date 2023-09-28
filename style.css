@@ -1,0 +1,147 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
+
+
+
+*{    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    animation: ease-in-out 3s;
+    min-height: 100vh;
+    min-width: 100vh;
+    background: url('imgs/bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    width: 150px;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 18px;
+    padding: 10px;
+    
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height:5%;
+    background: rgb(12, 150, 230);
+    
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.text{
+    position: fixed;
+    top: 50%;
+    left: 25%;
+
+}
+
+.text h1{
+color: rgb(250, 241, 112);
+padding-bottom: 30px;
+}
+.text h3{
+    color: white;
+    bottom: 20px;
+
+}
+.text h2{
+    color:rgb(250, 241, 112) ;
+    text-size: 20px;
+    margin-top: 20px;
+}
+button a{
+    text-decoration: none;
+    color:rgb(250, 241, 112) ;
+}
+button{
+    position: fixed;
+    background: none;
+    border: none;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: 800;
+}
+button a:hover{
+    color: black;
+}
+
+@media (max-width:600px){
+    *{
+        scroll-behavior: none;
+        animation: ease-in-out 3s;
+    }
+    .logo{
+        width: 150px;
+        
+    }
+    .navbar a{
+        position: relative;
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 1px;
+        padding: 1px;
+        
+    }
+    .text{
+        position: fixed;
+        top: 300px;
+        left: 60px;
+    }
+    .text h1{
+        color: rgb(250, 241, 112);
+        padding-bottom: 30px
+        }
+    
+   .text h3{
+            color: white;
+            bottom: 20px;
+        
+        }
+    .text h2{
+            color:rgb(250, 241, 112) ;
+            margin-top: 20px;
+            text-size: 15px;
+        }
+
+    button a{
+            text-decoration: none;
+            color:rgb(250, 241, 112) ;
+    }
+    button{
+            position: fixed;
+            background: none;
+            border: none;
+            padding: 3px;
+            font-size: 15px;
+            font-weight: 800;
+    }
+}
